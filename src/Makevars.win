@@ -1,0 +1,13 @@
+PKG_LIBS=-L.. -lgurobi90
+PKG_CPPFLAGS=-I$(GUROBI_HOME)/include -DWIN32 -DWIN64
+
+
+$(SHLIB): gurobi90.lib gurobi90.dll Rgurobi.o
+
+gurobi90.lib:
+	echo "CUR DIR IS $(CURDIR)"
+	cp -f $(GUROBI_HOME)/lib/gurobi90.lib ..
+
+gurobi90.dll:
+	echo "CUR DIR IS $(CURDIR)"
+	cp -f $(GUROBI_HOME)/bin/gurobi90.dll ..

@@ -1,0 +1,3 @@
+PTHREAD_LIB=`"$(R_HOME)/bin/Rscript" -e 'cat(ifelse(grepl("Darwin", Sys.info()["sysname"]), "", "-lpthread"))'`
+PKG_LIBS=-L$(GUROBI_HOME)/lib -lgurobi90 $(PTHREAD_LIB)
+PKG_CPPFLAGS=-I$(GUROBI_HOME)/include
