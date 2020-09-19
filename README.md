@@ -1,8 +1,7 @@
 ## Gurobi
 
 Installation of the `gurobi` package requires Gurobi optimizer and
-libraries which can be acquired from the [Gurobi
-website](https://www.gurobi.com). 
+libraries which can be obtained from [Gurobi](https://www.gurobi.com). 
 
 The source package can be built as usual at the shell prompt:
 
