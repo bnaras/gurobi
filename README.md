@@ -24,9 +24,12 @@ environment variable.
   `/Library/gurobi903/mac64`.
 
 - On windows, I was not able to use the instructions provided by
-  Gurobi to install. I believe there is some error in the
-  instructions. 
-
+  Gurobi to install. Here too, you need the `GUROBI_HOME` environment
+  variable which is usually something like `c:/gurobi903/win64`.  I
+  believe there is some error in the instructions since my approach is
+  pretty close to what they suggest: see `src/Makefile.win`.  Also,
+  there is an issue involving architectures: only `win64` seems
+  supported. 
 
 To install the package at a shell prompt, execute
 
@@ -52,4 +55,13 @@ devtools::document()
 ## or devtools::install() etc.
 ```
 
+### Documentation
+
+The gurobi sources clearly have incomplete and wrong documentation. It
+appears they used some automated process on their LaTeX sources that
+did part of the job but screwed up a lot.
+
+The version here has roxygenized documentation. Where the
+documentation is screwed up, I've bunched them all together in a file
+`R/gurobi_bad_doc.R`, so that Gurobi can easily correct it as needed. 
 
