@@ -59,9 +59,9 @@ devtools::document()
 
 The gurobi sources clearly have incomplete and wrong documentation. It
 appears they used some automated process on their LaTeX sources that
-did part of the job but screwed up a lot.
+did part of the job but messed up in several places.
 
 The version here has roxygenized documentation. Where the
-documentation is screwed up, I've bunched them all together in a file
-`R/gurobi_bad_doc.R`, so that Gurobi can easily correct it as needed. 
+documentation is problematic, I've bunched them all together in a file
+`R/gurobi_bad_doc.R`, so that Gurobi can easily correct it as needed.
 
