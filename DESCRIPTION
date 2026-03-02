@@ -1,17 +1,16 @@
 Package: gurobi
-Version: 9.0.3.1
-Date: 2020-09-15
-Title: Gurobi Optimizer 9.0 interface
-Authors@R: c(person(given = "Gurobi Optimzation LLC", role=c("aut", "cre", "cph"),
-	   	   email = "support@gurobi.com"),
-             person("Balasubramanian", "Narasimhan", role=c("ctb"),
-	   	   email = "naras@stanford.edu"))
-Description: R interface to Gurobi Optimizer. Gurobi can solve linear,
-             quadratic, mixed integer programming problems.
-License: LGPL-2.1
-Imports: methods, Matrix, slam (>= 0.1-9)
-SystemRequirements: Gurobi libraries and headers
-URL: https://www.gurobi.com
+Type: Package
+Title: Gurobi Optimizer Interface Stub
+Version: 13.0
+Authors@R: person("Balasubramanian", "Narasimhan",
+    role = c("aut", "cre"),
+    email = "naras@stat.stanford.edu")
+Description: Stub package for the Gurobi Optimizer R interface.
+    The full 'gurobi' R package is distributed by Gurobi Optimization
+    (<https://www.gurobi.com/>) and requires a Gurobi license.
+    This stub exists so that packages listing 'gurobi' in Enhances
+    can pass CRAN checks. Install the real package from Gurobi.
+SystemRequirements: Gurobi Optimizer (https://www.gurobi.com/)
+License: Apache License 2.0
 Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+URL: https://www.gurobi.com/documentation/current/refman/r_ins_the_r_package.html
